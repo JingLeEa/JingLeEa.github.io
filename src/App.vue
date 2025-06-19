@@ -1,47 +1,66 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Intro from './components/Intro.vue'
+import About from './components/About.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <nav>
+      <div class="logo">
+        Jing Le
+      </div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <Intro/>
+  <About/>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+* {
+  border: 1px solid red;
+  font-family: "Inter";
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  float: left;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  font-family: "Italianno";
+  font-size: 1.52rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav a {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
+
+nav a:hover {
+  color: grey;
+}
+
+nav a:active {
+  color: grey;
+}
+
 </style>
