@@ -17,6 +17,10 @@
 </template>
 
 <style scoped>
+/* * {
+  border: 1px solid red;
+} */
+
 #landing {
   height: 100vh;
   display: flex;
@@ -28,13 +32,14 @@
 h1 {
   font-weight: 900;
   font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 video {
-  width: 250px;
+  width: 300px;
   height: auto;
-  margin: 0.5rem 0;
-  border-radius: 100px;
+  margin: 1rem 0;
+  border-radius: 120px;
 }
 
 #interest {

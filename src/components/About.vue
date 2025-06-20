@@ -16,12 +16,12 @@
 </template>
 
 <style scoped>
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 .about-section {
-  height: 100vh;
+  /* height: 100vh; */
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -46,7 +46,6 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #333;
 }
 
 .about-left p {

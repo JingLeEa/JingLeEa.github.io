@@ -1,6 +1,8 @@
 <script setup>
 import Intro from './components/Intro.vue'
 import About from './components/About.vue'
+import Skills from './components/Skills.vue';
+import Experience from './components/Experience.vue';
 </script>
 
 <template>
@@ -12,6 +14,7 @@ import About from './components/About.vue'
       <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experiences">Experiences</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
@@ -19,12 +22,14 @@ import About from './components/About.vue'
   </div>
   <Intro/>
   <About/>
+  <Skills/>
+  <Experience/>
 </template>
 
 <style scoped>
 * {
-  border: 1px solid red;
   font-family: "Inter";
+  color: black;
 }
 
 nav {
