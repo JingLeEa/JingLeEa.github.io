@@ -89,7 +89,7 @@
 
 .main-container {
   text-align: center;
-  height: 90vh;
+  height: 80vh;
   align-content: center;
 }
 

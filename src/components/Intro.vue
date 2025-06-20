@@ -9,17 +9,21 @@
     <br>
     <p>Welcome to my personal page!</p>
     <div>
-      <img src="../assets/linkedin.png">
-      <img src="../assets/github.png">
-      <img src="../assets/email.png">
+      <a href="https://www.linkedin.com/in/jingleea/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+      </a>
+      <a href="https://github.com/JingLeEa" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+      </a>
+      <a href="mailto:eajingle@u.nus.edu"><img src="../assets/email.png"></a>
     </div>
   </section>
 </template>
 
 <style scoped>
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 #landing {
   height: 100vh;
@@ -50,5 +54,18 @@ video {
 img {
   width: 48px;
   margin: 2rem;
+}
+
+a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: none;
+}
+
+a img {
+  width: 60px;
+  height: 60px;
+  display: block;
 }
 </style>

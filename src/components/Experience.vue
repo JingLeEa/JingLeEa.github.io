@@ -41,7 +41,7 @@
 } */
 
 .main-container {
-  height: 90vh;
+  height: 80vh;
   align-content: center;
 }
 
@@ -61,7 +61,7 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.experience h3 {
+h3 {
   font-weight: 700;
 }
 

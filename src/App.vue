@@ -3,6 +3,8 @@ import Intro from './components/Intro.vue'
 import About from './components/About.vue'
 import Skills from './components/Skills.vue';
 import Experience from './components/Experience.vue';
+import Project from './components/Project.vue';
+import ImgCarousel from './components/ImgCarousel.vue';
 </script>
 
 <template>
@@ -24,6 +26,8 @@ import Experience from './components/Experience.vue';
   <About/>
   <Skills/>
   <Experience/>
+  <Project/>
+  <ImgCarousel/>
 </template>
 
 <style scoped>
