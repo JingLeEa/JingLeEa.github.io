@@ -91,6 +91,7 @@
   text-align: center;
   height: 80vh;
   align-content: center;
+  margin-bottom: 1rem;
 }
 
 h1 {

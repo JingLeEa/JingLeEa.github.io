@@ -55,10 +55,10 @@ function goToImage(index) {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .carousel-img {
-  max-height: 18.75rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -68,12 +68,13 @@ function goToImage(index) {
 .carousel-img img {
   height: 18.75rem;
   object-fit: contain;
-
+  /* border-radius: 20px; */
+  width: 100%;
 }
 
 .controls {
   position: absolute;
-  bottom: 12px;
+  bottom: 0px;
   left: 0;
   right: 0;
   width: 100%;
@@ -94,7 +95,7 @@ function goToImage(index) {
 
 .dots {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
@@ -108,12 +109,12 @@ function goToImage(index) {
   height: 10px;
   margin: 0 5px;
   cursor: pointer;
-  background-color: rgb(130, 130, 130);
+  background-color: rgb(189, 189, 189);
   transition: background-color 0.3s ease;
 }
 
 .dots span.active {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(143, 143, 143);
 }
 
 </style>c 

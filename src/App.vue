@@ -34,6 +34,7 @@ import ImgCarousel from './components/ImgCarousel.vue';
 * {
   font-family: "Inter";
   color: black;
+  background-color: white;
 }
 
 nav {
@@ -46,6 +47,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  font-size: 1.05rem;
 }
 
 .logo {
@@ -53,7 +55,7 @@ nav {
   padding: 0.5rem;
   margin-left: 1rem;
   font-family: "Italianno";
-  font-size: 1.52rem;
+  font-size: 1.6rem;
 }
 
 nav a {
@@ -68,7 +70,7 @@ nav a:hover {
   color: grey;
 }
 
-nav a:active {
+nav a.active {
   color: grey;
 }
 

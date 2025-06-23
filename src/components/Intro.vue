@@ -3,12 +3,16 @@
 
 <template>
   <section id="landing">
-    <h1>Hello, I’m Ea Jing Le! 👋</h1>
+    <div class="header">
+      <h1>Hello, I’m Ea Jing Le!</h1>
+      <img src="@/assets/wave.png">
+    </div>
+    
     <video src="../assets/memoji.mov" autoplay loop muted></video>
-    <p id="interest">I have interest in Data Analytics, Data Engineering and Machine Learning.</p>
+    <p id="interest">I have an interest in Data Analytics, Data Engineering and Machine Learning.</p>
     <br>
-    <p>Welcome to my personal page!</p>
-    <div>
+    <p id="welcome">Welcome to my personal page!</p>
+    <div class="contact">
       <a href="https://www.linkedin.com/in/jingleea/" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
       </a>
@@ -21,9 +25,9 @@
 </template>
 
 <style scoped>
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 #landing {
   height: 100vh;
@@ -33,10 +37,22 @@
   align-items: center;
 }
 
+.header {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.header img {
+  width: 45px;
+  margin-left: auto;
+  margin: auto 0;
+}
+
 h1 {
   font-weight: 900;
   font-size: 2.5rem;
-  margin-top: 2rem;
+  margin: 0 0.5rem;
 }
 
 video {
@@ -48,12 +64,23 @@ video {
 
 #interest {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
-img {
-  width: 48px;
-  margin: 2rem;
+#welcome {
+  font-size: 1.1rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact img {
+  width: 3.5rem;
+  height: auto;
 }
 
 a {

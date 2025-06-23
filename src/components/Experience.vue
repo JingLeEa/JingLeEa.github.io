@@ -5,10 +5,14 @@
 
       <div class="experience">
         <div class="left">
-          <h3>Data Intern, SBS Transit Ltd</h3>
-          <p>May 2025 - Jul 2025</p>
+          <h3>Data Engineer Intern, SBS Transit Ltd</h3>
+          <p id="duration">May 2025 - Jul 2025</p>
           <div class="description">
-            <p>Description here.</p>
+            <p>As a Data Engineer Intern, I support the maintenance and enhancement of SBS Transit's Data Analytics Platform (DAP),
+              which operates on AWS using services like DMS, Glue, Lambda and S3. My role focuses on ensuring the platform's data pipeline run smoothly
+              by detailing and validating ingestion logic, transformation workflows and system processes. 
+            </p>
+            <p style="margin-top: 0.5rem;">I've also contributed to improving data operations by developing Python script to automate and manipulate Excel files stored in S3.</p>
           </div>
         </div>
 
@@ -20,9 +24,13 @@
       <div class="experience">
         <div class="left">
           <h3>Research Assistant, NUS</h3>
-          <p>Sep 2024 - Oct 2024</p>
+          <p id="duration">Sep 2024 - Oct 2024</p>
           <div class="description">
-            <p>Description here.</p>
+            <p>
+              As a Research Assistant at the Department of Information Systems and Analytics in NUS, I supported experimental studies in educational technologies and psychophysiological research. 
+              I conducted laboratory experiments with human participants, operated eye-tracking and electrodermal devices, and ensured timely data collection and processing. 
+              I also worked closely with the lead professor to apply new software tools for psychophysiological data collection and analysis.
+            </p>
           </div>
         </div>
 
@@ -41,8 +49,8 @@
 } */
 
 .main-container {
-  height: 80vh;
   align-content: center;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -54,19 +62,26 @@ h1 {
 }
 
 .experience {
-  max-width: 60%;
+  max-width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: 70% 30%;
   margin-bottom: 3rem;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 h3 {
   font-weight: 700;
 }
 
-.experience p {
-  color: rgb(94, 94, 94)
+p {
+  text-align: justify;
+}
+
+#duration {
+  color: rgb(94, 94, 94);
 }
 
 .description {
