@@ -1,7 +1,9 @@
 <template>
   <div class="carousel">
     <div class="carousel-img">
-      <img :src="images[currentIndex]">
+      <div class="slideshow" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+        <img v-for="(img, index) in images" :key="index" :src="img">
+      </div>
     </div>
 
     <div class="controls">
@@ -55,7 +57,7 @@ function goToImage(index) {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .carousel-img {
@@ -65,11 +67,18 @@ function goToImage(index) {
   justify-content: center;
 }
 
-.carousel-img img {
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slideshow img {
   height: 18.75rem;
   object-fit: contain;
   /* border-radius: 20px; */
   width: 100%;
+  flex-shrink: 0; /* check */
 }
 
 .controls {

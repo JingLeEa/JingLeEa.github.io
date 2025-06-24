@@ -11,7 +11,7 @@
     <video src="../assets/memoji.mov" autoplay loop muted></video>
     <p id="interest">I have an interest in Data Analytics, Data Engineering and Machine Learning.</p>
     <br>
-    <p id="welcome">Welcome to my personal page!</p>
+    <p id="welcome">Welcome to my personal page! <br> <i>Feel free to contact me via:</i></p>
     <div class="contact">
       <a href="https://www.linkedin.com/in/jingleea/" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
@@ -30,7 +30,7 @@
 } */
 
 #landing {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,10 +65,13 @@ video {
 #interest {
   font-weight: 700;
   font-size: 1.35rem;
+  max-width: 80%;
+  text-align: center;
 }
 
 #welcome {
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .contact {

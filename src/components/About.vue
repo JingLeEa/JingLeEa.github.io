@@ -3,9 +3,15 @@
     <div class="container">
       <div class="about-left">
         <h1>About Me</h1>
+
+        <!-- Image for mobile -->
+        <div class="about-right mobile-img">
+          <img src="../assets/nus bza.png" alt="Profile" />
+        </div>
+
         <p>
-          Hi! I’m <span style="font-weight: 700; font-size: 1.5rem; color: #7F27FF">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
-          majoring in <span style="color: #9F70FD; font-size: 1.25rem; font-weight: 600;">Business Analytics with a minor in Economics</span>. 
+          Hi! I’m <span style="font-weight: 700; font-family: Delicious Handrawn, cursive; font-size: 1.5rem; color: #7F27FF">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
+          majoring in <span style="color: #9F70FD; font-family: Cascadia Code, sans-serif; font-weight: 600;">Business Analytics with a minor in Economics</span>. 
         </p>
         <p style="margin-top: 0.5rem;">
           I enjoy working with data to uncover insights, solve problems, and improve everyday experiences, whether through analysis, building dashboards, 
@@ -15,9 +21,12 @@
           which often shapes how I approach both my creative and technical projects.</p>
       </div>
 
-      <div class="about-right">
-        <img src="../assets/nus bza.png">
+      <!-- Image for desktop -->
+      <div class="about-right desktop-img">
+        <img src="../assets/nus bza.png" alt="Profile" />
       </div>
+
+      
     </div>
   </section>
 </template>
@@ -29,7 +38,7 @@
 
 .about-section {
   /* height: 100vh; */
-  padding: 4rem 2rem;
+  padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
 }
 
@@ -56,7 +65,7 @@
 }
 
 .about-left p {
-  text-align: left;
+  text-align: justify;
   font-size: 1.1rem;
 }
 
@@ -68,5 +77,32 @@
 
 .about-right img {
   max-width: 100%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    max-width: 70%;
+
+  }
 }
 </style>

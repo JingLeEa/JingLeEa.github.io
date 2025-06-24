@@ -89,9 +89,10 @@
 
 .main-container {
   text-align: center;
-  height: 80vh;
+  min-height: fit-content;
   align-content: center;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 32px;
 }
 
 h1 {
@@ -107,6 +108,8 @@ h2 {
 }
 
 .skills-grid {
+  max-width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -130,5 +133,15 @@ h2 {
   height: 64px;
   object-fit: contain;
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    min-height: fit-content;
+    text-align: center;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 </style>

@@ -122,6 +122,7 @@ const project4Images = [
 
 .main-container {
   align-content: center;
+  margin: 3rem 0;
 }
 
 h1 {
@@ -151,6 +152,7 @@ h1 {
   margin: 0 1rem;
   border: 1px solid;
   border-radius: 20px;
+  margin-top: 0.75rem;
 }
 
 .right p {
@@ -173,6 +175,21 @@ span {
   background-color: rgb(216, 237, 255);
   border: 1px solid rgb(179, 195, 210);
   border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .project {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    max-width: 75%;
+    margin-bottom: 1rem;
+  }
 }
 
 </style>

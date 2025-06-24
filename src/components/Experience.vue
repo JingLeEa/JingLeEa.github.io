@@ -50,7 +50,7 @@
 
 .main-container {
   align-content: center;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h1 {
   display: grid;
   grid-template-columns: 70% 30%;
   margin-bottom: 3rem;
-  border: 1px solid;
+  border: 1px solid rgb(167, 167, 167);
   border-radius: 20px;
   padding: 20px;
 }
@@ -96,5 +96,30 @@ p {
 .right img {
   max-width: 80%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right img {
+    max-width: 30%;
+    max-height: 60px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
 }
 </style>
