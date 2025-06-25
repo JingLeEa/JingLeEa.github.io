@@ -57,7 +57,7 @@ function goToImage(index) {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .carousel-img {

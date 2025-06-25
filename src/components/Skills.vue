@@ -91,8 +91,7 @@
   text-align: center;
   min-height: fit-content;
   align-content: center;
-  margin-top: 3rem;
-  margin-bottom: 32px;
+  margin: 3rem 0;
 }
 
 h1 {

@@ -1,5 +1,7 @@
 <script setup>
 import ImgCarousel from './ImgCarousel.vue';
+import { ref } from 'vue'
+import Galleria from 'primevue/galleria'
 
 const project1Images = [
   new URL('@/assets/etlt1.png', import.meta.url).href,
@@ -150,7 +152,7 @@ h1 {
   padding: 1rem;
   /* remove border comment code below */
   margin: 0 1rem;
-  border: 1px solid;
+  border: 1px solid rgb(167, 167, 167);
   border-radius: 20px;
   margin-top: 0.75rem;
 }

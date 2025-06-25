@@ -4,9 +4,18 @@ import About from './components/About.vue'
 import Skills from './components/Skills.vue';
 import Experience from './components/Experience.vue';
 import Project from './components/Project.vue';
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 
 const showButton = ref(false)
+const isDarkMode = ref(false)
+
+watch(isDarkMode, (newVal) => {
+  if (newVal) {
+    document.body.classList.add('dark')
+  } else {
+    document.body.classList.remove('dark')
+  }
+})
 
 function scrollToTop() {
   window.scrollTo({
@@ -29,21 +38,24 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="nav-bar">
     <nav>
       <div class="logo">
         Jing Le
       </div>
-      <div>
+      <div class="nav-menu">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experiences">Experiences</a>
         <a href="#projects">Projects</a>
         <a @click="scrollToTop" style="cursor: pointer;">Contact</a>
+        <button class="theme-toggle" @click="isDarkMode = !isDarkMode">
+          <i :class="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
+        </button>
       </div>
     </nav>
   </div>
-  <Intro/>
+  <Intro :isDarkMode="isDarkMode" />
   <About/>
   <Skills/>
   <Experience/>
@@ -57,8 +69,6 @@ onUnmounted(() => {
 <style scoped>
 * {
   font-family: "Inter";
-  color: black;
-  background-color: white;
   /* border: 1px solid red; */
 }
 
@@ -67,7 +77,7 @@ nav {
   top: 0;
   z-index: 1000;
   padding: 0.5rem;
-  background-color: white;
+  background-color: var(--color-background);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -83,9 +93,9 @@ nav {
   font-size: 1.6rem;
 }
 
-nav a {
+nav a, .theme-toggle {
   font-weight: 500;
-  color: black;
+  color: var(--color-text);
   text-decoration: none;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -99,12 +109,20 @@ nav a.active {
   color: grey;
 }
 
-i {
+.theme-toggle {
+  background-color: var(--color-background);
+  font-size: 1.1rem;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.pi-arrow-up {
   position: fixed;
   bottom: 30px;
   right: 30px;
   background-color: rgb(46, 46, 46);
-  color: white;
+  color: var(--color-background);
   border: none;
   padding:  1rem;
   cursor: pointer;
@@ -117,7 +135,7 @@ i {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-i.visible {
+.pi-arrow-up.visible {
   opacity: 1;
   visibility: visible;
 }
@@ -132,12 +150,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  nav a {
-  font-weight: 500;
-  color: black;
-  text-decoration: none;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+  nav a, .theme-toggle {
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 </style>

@@ -1,3 +1,8 @@
+<script setup>
+// defineExpose({})
+// const animateDirective = { animateonscroll: AnimateOnScroll }
+</script>
+
 <template>
   <section id="about" class="about-section">
     <div class="container">
@@ -10,8 +15,8 @@
         </div>
 
         <p>
-          Hi! I’m <span style="font-weight: 700; font-family: Delicious Handrawn, cursive; font-size: 1.5rem; color: #7F27FF">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
-          majoring in <span style="color: #9F70FD; font-family: Cascadia Code, sans-serif; font-weight: 600;">Business Analytics with a minor in Economics</span>. 
+          Hi! I’m <span id="my-name">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
+          majoring in <span id="my-course">Business Analytics with a minor in Economics</span>. 
         </p>
         <p style="margin-top: 0.5rem;">
           I enjoy working with data to uncover insights, solve problems, and improve everyday experiences, whether through analysis, building dashboards, 
@@ -73,6 +78,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#my-name {
+  font-weight: 700;
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 1.5rem;
+  color: #7F27FF
+}
+
+#my-course {
+  color: #9F70FD; 
+  font-family: "Cascadia Code", sans-serif; 
+  font-weight: 600;
 }
 
 .about-right img {

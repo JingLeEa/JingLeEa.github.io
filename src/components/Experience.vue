@@ -17,7 +17,7 @@
         </div>
 
         <div class="right">
-          <img src="../assets/sbst.jpg" alt="">
+          <img src="../assets/sbst.png" alt="">
         </div>
       </div>
 
@@ -50,7 +50,7 @@
 
 .main-container {
   align-content: center;
-  margin-top: 3rem;
+  margin-top: 3rem; /* margin bottom in experience */
 }
 
 h1 {
@@ -58,15 +58,13 @@ h1 {
   font-size: 2rem;
   font-weight: 800;
   margin-top: 0;
-  margin-bottom: 2rem;
 }
 
 .experience {
   max-width: 70%;
-  margin: auto;
+  margin: 2rem auto 3rem auto; /* margin bottom incl here*/
   display: grid;
   grid-template-columns: 70% 30%;
-  margin-bottom: 3rem;
   border: 1px solid rgb(167, 167, 167);
   border-radius: 20px;
   padding: 20px;
@@ -101,7 +99,32 @@ p {
 @media (max-width: 768px) {
   .experience {
     max-width: 80%;
-    margin: auto;
+    margin: 2rem auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right img {
+    max-width: 30%;
+    max-height: 60px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    max-width: 80%;
+    margin: 2rem auto 3rem auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;

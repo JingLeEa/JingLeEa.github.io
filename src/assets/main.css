@@ -3,3 +3,49 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* body.dark {
+  background-color: black;
+  color: white;
+}
+
+body.dark nav, body.dark .logo, body.dark nav a, body.dark .nav-menu, body.dark .theme-toggle {
+  background-color: black;
+  color: white;
+} */
+
+:root {
+  --color-background: white;
+  --color-text: black;
+}
+
+body.dark {
+  --color-background: #1e1c20;
+  --color-text: white;
+}
+
+body.dark #my-name{
+  color: rgb(255, 198, 85);
+}
+
+body.dark #my-course {
+  color: rgb(248, 164, 164);
+}
+
+body.dark #duration {
+  color: rgb(158, 158, 158);
+}
+
+body.dark .tools span{
+  background-color: rgb(9, 41, 75);
+  border: 1px solid rgb(13, 65, 120);
+  color: rgb(134, 169, 255);
+}
+
+body.dark .dots span {
+  background-color: rgb(143, 143, 143);
+}
+
+body.dark .dots span.active {
+  background-color: rgb(189, 189, 189);
+}
