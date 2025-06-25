@@ -149,13 +149,43 @@ footer p {
   color: rgb(108, 108, 108);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .logo {
+    margin-left: 0.2rem;
+  }
+
   nav a, .theme-toggle {
     font-weight: 500;
     color: var(--color-text);
     text-decoration: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .theme-toggle {
+    margin-right: 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    margin-left: 0.1rem;
+  }
+
+  /* nav a, .theme-toggle {
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  } */
+
+  /* .theme-toggle {
+    margin-right: 0;
+  } */
+  nav {
+    display: none;
   }
 }
 </style>

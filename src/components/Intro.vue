@@ -13,7 +13,7 @@ const darkMemoji = new URL('@/assets/Memoji_dark.mov', import.meta.url).href
 <template>
   <section id="landing">
     <div class="header">
-      <h1>Hello, I’m Ea Jing Le!</h1>
+      <h1>Hi, I’m Ea Jing Le!</h1>
       <img src="@/assets/wave.png">
     </div>
     
@@ -126,5 +126,15 @@ a img {
 
 #github {
   font-size: 60px;
+}
+
+@media (max-width: 576px) {
+  .header {
+    margin-top: 2rem;
+    display: flex;
+  }
+  .header img {
+    display: none;
+  }
 }
 </style>

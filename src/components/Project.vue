@@ -1,26 +1,24 @@
 <script setup>
 import ImgCarousel from './ImgCarousel.vue';
-import { ref } from 'vue'
-import Galleria from 'primevue/galleria'
 
 const project1Images = [
-  new URL('@/assets/etlt1.png', import.meta.url).href,
+  new URL('@/assets/etlt.png', import.meta.url).href,
   new URL('@/assets/etlt2.png', import.meta.url).href,
 ]
 
 const project2Images = [
-  new URL('@/assets/spotless_ss.jpg', import.meta.url).href,
-  new URL('@/assets/ceremony.jpeg', import.meta.url).href,
+  new URL('@/assets/spotless.png', import.meta.url).href,
+  new URL('@/assets/spotless2.png', import.meta.url).href,
 ]
 
 const project3Images = [
   new URL('@/assets/portwell.png', import.meta.url).href,
-  new URL('@/assets/portwell2.jpg', import.meta.url).href,
+  new URL('@/assets/portwell2.png', import.meta.url).href,
 ]
 
 const project4Images = [
   new URL('@/assets/stucado3.png', import.meta.url).href,
-  new URL('@/assets/stucado1.png', import.meta.url).href,
+  new URL('@/assets/stucado.png', import.meta.url).href,
   new URL('@/assets/stucado2.png', import.meta.url).href,
 ]
 </script>
@@ -32,11 +30,11 @@ const project4Images = [
       
       <div class="project">
 
-        <div class="left">
+        <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <ImgCarousel :images="project1Images" />
         </div>
         
-        <div class="right">
+        <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <h3>Housing Analysis Pipeline Project (Data Engineering)</h3>
           <p>As part of a data engineering module, my team and I built a modular ETLT pipeline using Apache Airflow, Docker, 
             and PostgreSQL to collect and process Singapore housing data to analyze housing price trends in Singapore. 
@@ -58,11 +56,11 @@ const project4Images = [
 
       <div class="project">
 
-        <div class="left">
+        <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <ImgCarousel :images="project2Images" />
         </div>
 
-        <div class="right">
+        <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <h3>Spotless, SBS Transit Hackathon</h3>
           <p>SBS Spotless is a comprehensive fleet management solution developed for SBS Hackathon 2024, which allows bus operators to manage the cleanliness 
             of SBS's bus fleet with features such as cleanliness checklist assigning, AI powered cleanliness verification system, QR based feedback collection system, 
@@ -76,11 +74,11 @@ const project4Images = [
 
       <div class="project">
 
-        <div class="left">
+        <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <ImgCarousel :images="project3Images" />
         </div>
 
-        <div class="right">
+        <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <h3>PortWell, PSA Hackathon</h3>
           <p>PortWell is a mental wellness and upskilling platform designed to support PSA’s workforce by promoting employee well-being and continuous growth. </p>
           <p>Developed during the PSA Code Sprint 2024, the project placed in the Top 15 out of nearly 100 teams and earned a Commendation Prize. </p>
@@ -96,11 +94,11 @@ const project4Images = [
 
       <div class="project">
 
-        <div class="left">
+        <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <ImgCarousel :images="project4Images" />
         </div>
 
-        <div class="right">
+        <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
           <h3>Stucado, NUS Orbital Project</h3>
           <p>Stucado is a data-driven productivity tool tailored for university students, created for NUS Orbital 23/24 at the Apollo (advanced) level. 
             The platform helps students manage academic workloads through personalized study insights and productivity tracking.</p>
@@ -132,33 +130,52 @@ h1 {
   font-size: 2rem;
   font-weight: 800;
   margin-top: 0;
-  margin-bottom: 2rem;
 }
 
-.project {
-  max-width: 80%;
+/* .project {
+  max-width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: 40% 60%;
   margin-bottom: 3rem;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 20px;
+
+} */
+
+.project {
+  max-width: 70%;
+  margin: 1rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(167, 167, 167);
+  border-radius: 20px; */
 }
 
-.left {
-  max-width: 100%;
+/* .left {
+  max-width: 75%;
   margin: auto 0;
+  margin-left: 1rem;
+  border: 1px solid red;
+} */
+
+.left {
+  max-width: 70%;
+  margin: 1rem auto;
 }
 
 .right {
   padding: 1rem;
   /* remove border comment code below */
-  margin: 0 1rem;
   border: 1px solid rgb(167, 167, 167);
-  border-radius: 20px;
-  margin-top: 0.75rem;
+  border-radius: 20px; 
 }
 
 .right p {
   margin-bottom: 8px;
+  text-align: justify;
 }
 
 h3 {
@@ -179,7 +196,7 @@ span {
   border-radius: 20px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .project {
     max-width: 80%;
     display: flex;
@@ -192,6 +209,25 @@ span {
     max-width: 75%;
     margin-bottom: 1rem;
   }
+} */
+
+@media (max-width: 1024px) {
+  .project {
+    max-width: 80%;
+  }
+
+  .left {
+    max-width: 80%;
+  }
 }
 
+@media (max-width: 768px) {
+  .project {
+    max-width: 80%;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+}
 </style>

@@ -57,7 +57,7 @@ function goToImage(index) {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .carousel-img {
@@ -74,7 +74,7 @@ function goToImage(index) {
 }
 
 .slideshow img {
-  height: 18.75rem;
+  height: auto;
   object-fit: contain;
   /* border-radius: 20px; */
   width: 100%;

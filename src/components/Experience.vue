@@ -1,9 +1,9 @@
 <template>
   <section id="experiences">
     <div class="main-container">
-      <h1>My Experiences</h1>
+      <h1 v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 animate-duration-2000' }">My Experiences</h1>
 
-      <div class="experience">
+      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-l-8 animate-duration-1000' }">
         <div class="left">
           <h3>Data Engineer Intern, SBS Transit Ltd</h3>
           <p id="duration">May 2025 - Jul 2025</p>
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="experience">
+      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-r-8 animate-duration-1000' }">
         <div class="left">
           <h3>Research Assistant, NUS</h3>
           <p id="duration">Sep 2024 - Oct 2024</p>

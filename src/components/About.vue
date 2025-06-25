@@ -1,33 +1,33 @@
 <script setup>
-// defineExpose({})
-// const animateDirective = { animateonscroll: AnimateOnScroll }
+import AnimateOnScroll from 'primevue/animateonscroll'
 </script>
 
 <template>
   <section id="about" class="about-section">
     <div class="container">
       <div class="about-left">
-        <h1>About Me</h1>
+        <h1 v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 animate-duration-1000' }">About Me</h1>
 
         <!-- Image for mobile -->
-        <div class="about-right mobile-img">
+        <div class="about-right mobile-img" v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 animate-duration-1500' }">
           <img src="../assets/nus bza.png" alt="Profile" />
         </div>
 
-        <p>
+        <p v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000' }">
           Hi! I’m <span id="my-name">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
           majoring in <span id="my-course">Business Analytics with a minor in Economics</span>. 
         </p>
-        <p style="margin-top: 0.5rem;">
+        <p style="margin-top: 0.5rem;" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000' }">
           I enjoy working with data to uncover insights, solve problems, and improve everyday experiences, whether through analysis, building dashboards, 
           or designing simple, user-friendly solutions. 
         </p>
-        <p style="margin-top: 0.5rem;">Outside of tech, I love drawing, designing, and photography. I’d like to think I have an eye for aesthetics :P, 
+        <p style="margin-top: 0.5rem;" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000' }">
+          Outside of tech, I love drawing, designing, and photography. I’d like to think I have an eye for aesthetics :P, 
           which often shapes how I approach both my creative and technical projects.</p>
       </div>
 
       <!-- Image for desktop -->
-      <div class="about-right desktop-img">
+      <div class="about-right desktop-img" v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 slide-in-from-r-8 animate-duration-1500' }">
         <img src="../assets/nus bza.png" alt="Profile" />
       </div>
 
@@ -95,6 +95,7 @@
 
 .about-right img {
   max-width: 100%;
+  display: block;
 }
 
 .mobile-img {
