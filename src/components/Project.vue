@@ -31,7 +31,9 @@ const project4Images = [
       <div class="project">
 
         <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
-          <ImgCarousel :images="project1Images" />
+          <a href="https://github.com/JingLeEa/housing-price-analysis-pipeline" target="_blank" rel="noopener noreferrer">
+            <ImgCarousel :images="project1Images" />
+          </a>
         </div>
         
         <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
@@ -57,7 +59,9 @@ const project4Images = [
       <div class="project">
 
         <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
-          <ImgCarousel :images="project2Images" />
+          <a href="https://github.com/Zenkoh1/sbs-spotless" target="_blank" rel="noopener noreferrer">
+            <ImgCarousel :images="project2Images" />
+          </a>
         </div>
 
         <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
@@ -75,7 +79,9 @@ const project4Images = [
       <div class="project">
 
         <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
-          <ImgCarousel :images="project3Images" />
+          <a href="https://github.com/Zenkoh1/psa-codesprint-2024" target="_blank" rel="noopener noreferrer">
+            <ImgCarousel :images="project3Images" />
+          </a>
         </div>
 
         <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
@@ -95,7 +101,9 @@ const project4Images = [
       <div class="project">
 
         <div class="left" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">
-          <ImgCarousel :images="project4Images" />
+          <a href="https://github.com/AustinKong/stucado">
+            <ImgCarousel :images="project4Images" />
+          </a>
         </div>
 
         <div class="right" v-animateonscroll="{ enterClass: 'animate-enter fade-in-8 slide-in-from-b-8 animate-duration-1000' }">

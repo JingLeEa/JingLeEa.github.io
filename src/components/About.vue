@@ -23,7 +23,7 @@ import AnimateOnScroll from 'primevue/animateonscroll'
         </p>
         <p style="margin-top: 0.5rem;" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000' }">
           Outside of tech, I love drawing, designing, and photography. I’d like to think I have an eye for aesthetics :P, 
-          which often shapes how I approach both my creative and technical projects.</p>
+          which often shapes how I approach both my creative and technical projects. <i>Side note, I designed and built this website from scratch with Vue js!</i></p>
       </div>
 
       <!-- Image for desktop -->

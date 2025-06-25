@@ -6,19 +6,20 @@
       </div>
     </div>
 
-    <div class="controls">
-      <i @click="prevImage" class="pi pi-chevron-left"></i>
-      <i @click="nextImage" class="pi pi-chevron-right"></i>
+    <div class="controls" @click.prevent.stop>
+      <i @click.prevent.stop="prevImage" class="pi pi-chevron-left"></i>
+      <i @click.prevent.stop="nextImage" class="pi pi-chevron-right"></i>
     </div>
 
-    <div class="dots">
+    <div class="dots" @click.prevent.stop>
       <span
         v-for="(image, index) in images"
         :key="index"
         :class="{ active: currentIndex === index }"
-        @click="goToImage(index)"
+        @click.prevent.stop="goToImage(index)"
       ></span>
     </div>
+    <div class="control-overlay" @click.prevent.stop></div>
   </div>
 </template>
 
@@ -79,6 +80,13 @@ function goToImage(index) {
   /* border-radius: 20px; */
   width: 100%;
   flex-shrink: 0; /* check */
+  transition: ease 0.5s;
+}
+
+.slideshow img:hover {
+  transition: ease 0.5s;
+  transform: scale(1.01);
+  border-radius: 40px;
 }
 
 .controls {
@@ -126,4 +134,19 @@ function goToImage(index) {
   background-color: rgb(143, 143, 143);
 }
 
+.control-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 30px; /* Same as padding-bottom of .carousel */
+  width: 100%;
+  z-index: 1; /* Behind other controls */
+  cursor: default;
+}
+
+.controls,
+.dots {
+  z-index: 2; /* Above the overlay */
+}
 </style>c 
