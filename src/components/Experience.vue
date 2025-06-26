@@ -28,7 +28,7 @@
           <div class="description">
             <p>
               As a Research Assistant at the Department of Information Systems and Analytics in NUS, I supported experimental studies in educational technologies and psychophysiological research. 
-              I conducted laboratory experiments with human participants, operated eye-tracking and electrodermal devices, and ensured timely data collection and processing. 
+              Also, I conducted laboratory experiments with human participants, operated eye-tracking and electrodermal devices, and ensured timely data collection and processing. 
               I also worked closely with the lead professor to apply new software tools for psychophysiological data collection and analysis.
             </p>
           </div>

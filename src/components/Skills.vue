@@ -139,10 +139,12 @@ h2 {
   height: 64px;
   object-fit: contain;
   margin: 10px 0;
+  transition: ease 0.3s;
 }
 
 .item img:hover {
-  transform: scale(1.1);
+  transform: scale(1.11);
+  transition: ease 0.3s;
 }
 
 @media (max-width: 768px) {

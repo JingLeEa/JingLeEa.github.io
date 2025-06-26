@@ -86,7 +86,7 @@ function goToImage(index) {
 .slideshow img:hover {
   transition: ease 0.5s;
   transform: scale(1.01);
-  border-radius: 40px;
+  border-radius: 50px;
 }
 
 .controls {

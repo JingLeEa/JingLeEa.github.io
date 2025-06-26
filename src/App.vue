@@ -69,7 +69,7 @@ onUnmounted(() => {
 <style scoped>
 * {
   font-family: "Inter";
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 nav {
