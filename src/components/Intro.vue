@@ -8,6 +8,9 @@ const props = defineProps({
 
 const lightMemoji = new URL('@/assets/Memoji.mov', import.meta.url).href
 const darkMemoji = new URL('@/assets/Memoji_dark.mov', import.meta.url).href
+
+const lightMemojiimg = new URL('@/assets/memoji.jpg', import.meta.url).href
+const darkMemojiimg = new URL('@/assets/memoji_dark.jpg', import.meta.url).href
 </script>
 
 <template>
@@ -33,6 +36,10 @@ const darkMemoji = new URL('@/assets/Memoji_dark.mov', import.meta.url).href
       muted
     ></video>
 
+    <!-- display when on phone -->
+    <img class="memoji" v-show="isDarkMode" :src="darkMemojiimg">
+    <img class="memoji" v-show="!isDarkMode" :src="lightMemojiimg">
+
     <p id="interest">I have an interest in Data Analytics, Data Engineering and Machine Learning.</p>
     <br>
     <p id="welcome">Welcome to my personal page! <br> <i>Feel free to contact me via:</i></p>
@@ -55,7 +62,7 @@ const darkMemoji = new URL('@/assets/Memoji_dark.mov', import.meta.url).href
 } */
 
 #landing {
-  height: 100svh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +70,7 @@ const darkMemoji = new URL('@/assets/Memoji_dark.mov', import.meta.url).href
 }
 
 .header {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 90% 10%;
 }
@@ -85,6 +92,10 @@ video {
   height: auto;
   margin: 1rem 0;
   border-radius: 120px;
+}
+
+.memoji {
+  display: none;
 }
 
 #interest {
@@ -130,11 +141,23 @@ a img {
 
 @media (max-width: 576px) {
   .header {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
   }
   .header img {
     display: none;
+  }
+
+  video {
+    display: none;
+  }
+
+  .memoji {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 120px;
   }
 }
 </style>

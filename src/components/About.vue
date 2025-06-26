@@ -108,6 +108,7 @@ import AnimateOnScroll from 'primevue/animateonscroll'
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
   }
 
   .desktop-img {
@@ -120,8 +121,13 @@ import AnimateOnScroll from 'primevue/animateonscroll'
     align-items: center;
     margin: auto;
     margin-bottom: 1.5rem;
-    max-width: 70%;
+    max-width: 90%;
+  }
+}
 
+@media (max-width: 576px) {
+  .mobile-img {
+    max-width: 100%;
   }
 }
 </style>

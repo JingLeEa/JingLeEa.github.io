@@ -152,8 +152,8 @@ h2 {
     min-height: fit-content;
     text-align: center;
     align-content: center;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    max-width: 90%;
+    margin: 3rem auto 5rem auto;
   }
 
   .item {

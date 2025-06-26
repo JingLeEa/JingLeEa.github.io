@@ -28,8 +28,24 @@ function handleScroll() {
   showButton.value = window.scrollY > 300
 }
 
+function toggleTheme() {
+  isDarkMode.value = !isDarkMode.value;
+  document.body.classList.toggle('dark', isDarkMode.value);
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    isDarkMode.value = true;
+    document.body.classList.add('dark');
+  }
+
+  // Optional: Listen for changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    isDarkMode.value = e.matches;
+    document.body.classList.toggle('dark', isDarkMode.value);
+  });
 })
 
 onUnmounted(() => {
@@ -49,9 +65,12 @@ onUnmounted(() => {
         <a href="#experiences">Experiences</a>
         <a href="#projects">Projects</a>
         <a @click="scrollToTop" style="cursor: pointer;">Contact</a>
-        <button class="theme-toggle" @click="isDarkMode = !isDarkMode">
+        <button class="theme-toggle" @click="toggleTheme">
           <i :class="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
         </button>
+        <!-- <button class="theme-toggle" @click="isDarkMode = !isDarkMode">
+          <i :class="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
+        </button> -->
       </div>
     </nav>
   </div>
