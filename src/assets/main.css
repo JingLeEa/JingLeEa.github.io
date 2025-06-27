@@ -52,3 +52,8 @@ body.dark .dots span {
 body.dark .dots span.active {
   background-color: rgb(189, 189, 189);
 }
+
+body.dark .pi-arrow-up {
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
