@@ -5,6 +5,22 @@
 
       <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-l-8 animate-duration-1000' }">
         <div class="left">
+          <h3>Data Analyst Intern, Shopee Singapore</h3>
+          <p id="duration">Jul 2025 - Dec 2025</p>
+          <div class="description">
+            <p>As a Data Analyst Intern, I automated data processes and built analytical solutions. My key contributions include engineering KPI dashboards using SQL, Excel and Apps Script to automate metrics aggregation. 
+              I also built a Seatalk reminder bot integrated with Google Sheets to automate crucial task reminders for internal stakeholders. 
+            </p>
+            <p style="margin-top: 0.5rem;">Furthermore, I developed robust ETLT pipelines using Python, PrestoSQL, Hive and SparkSQL to transform complex nested JSON data into insightful dashboards that assess team responsiveness and overall business performance.</p>
+          </div>
+        </div>
+        <div class="right">
+          <img src="../assets/shopee.png" alt="">
+        </div>
+      </div>
+
+      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-r-8 animate-duration-1000' }">
+        <div class="left">
           <h3>Data Engineer Intern, SBS Transit Ltd</h3>
           <p id="duration">May 2025 - Jul 2025</p>
           <div class="description">
@@ -21,7 +37,7 @@
         </div>
       </div>
 
-      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-r-8 animate-duration-1000' }">
+      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-l-8 animate-duration-1000' }">
         <div class="left">
           <h3>Research Assistant, NUS</h3>
           <p id="duration">Sep 2024 - Oct 2024</p>
