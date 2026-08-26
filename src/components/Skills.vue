@@ -21,13 +21,8 @@
           </div>
 
           <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1000' }">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg" />
-            <span>R</span>
-          </div>
-
-          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1200' }">
-            <img src="../assets/excel.png" alt="">
-            <span>Excel</span>
+            <img src="../assets/powerbi.png" />
+            <span>PowerBI</span>
           </div>
 
           <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1400' }">
@@ -45,9 +40,41 @@
             <span>PostgreSQL</span>
           </div>
 
+          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1000' }">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg" />
+            <span>R</span>
+          </div>
+
+          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1200' }">
+            <img src="../assets/excel.png" alt="">
+            <span>Excel</span>
+          </div>
+
           <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-2000' }">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
             <span>Matplotlib</span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="skill-category">
+        <h2 v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 animate-duration-2000' }">Data Engineering</h2>
+
+        <div class="skills-grid">
+
+          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-600' }">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" />
+            <span>Apache Airflow</span>
+          </div>
+
+          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-600' }">
+            <img src="../assets/databricks.png" />
+            <span>Databricks</span>
+          </div>
+
+          <div class="item" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-10 animate-duration-1000' }">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original-wordmark.svg" />
+            <span>PySpark</span>
           </div>
         </div>
       </div>
@@ -84,6 +111,7 @@
 
         </div>
       </div>
+      
     </div>
   </section>
 </template>

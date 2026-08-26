@@ -3,6 +3,27 @@
     <div class="main-container">
       <h1 v-animateonscroll="{ enterClass: 'animate-enter fade-in-20 animate-duration-2000' }">My Experiences</h1>
 
+      <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-r-8 animate-duration-1000' }">
+        <div class="left">
+          <h3>Business Analyst Intern (Data Engineering & Actuarial Analytics), Munich Re</h3>
+          <p id="duration">May 2026 - Present</p>
+          <div class="description">
+            <p>As a Business Analyst Intern at Munich Re, I built end-to-end data pipelines and AI-powered tools to support actuarial data migration and treaty analysis. 
+              My key contributions include engineering a Databricks ETL pipeline using PySpark to transform raw actuarial data into treaty-level datasets of ~40 million rows each, 
+              complete with data quality validation and reporting dashboards. 
+            </p>
+            <p style="margin-top: 0.5rem;">
+              I also developed a RAG-based claim classification pipeline using ChromaDB and an in-house LLM to automate insurance claim categorization, 
+              and built an LLM-powered document extraction tool to parse unstructured treaty documents into structured data, cutting manual review time from hours to minutes.
+            </p>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="../assets/mr.png" alt="">
+        </div>
+      </div>
+
       <div class="experience" v-animateonscroll="{ enterClass: 'animate-enter slide-in-from-l-8 animate-duration-1000' }">
         <div class="left">
           <h3>Data Analyst Intern, Shopee Singapore</h3>

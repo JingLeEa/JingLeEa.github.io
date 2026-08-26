@@ -65,12 +65,12 @@ const darkMemojiimg = new URL('@/assets/memoji_dark.jpg', import.meta.url).href
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: clamp(5.5rem, 12vh, 10rem) 1rem 3rem;
 }
 
 .header {
-  margin-top: 3rem;
   display: grid;
   grid-template-columns: 90% 10%;
 }
@@ -140,8 +140,11 @@ a img {
 }
 
 @media (max-width: 576px) {
+  #landing {
+    padding-top: clamp(4.5rem, 10vh, 7rem);
+  }
+
   .header {
-    margin-top: 3rem;
     display: flex;
   }
   .header img {
