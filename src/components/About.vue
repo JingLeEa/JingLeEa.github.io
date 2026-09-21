@@ -14,11 +14,11 @@ import AnimateOnScroll from 'primevue/animateonscroll'
         </div>
 
         <p v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000' }">
-          Hi! I’m <span id="my-name">Jing Le</span> — a Year 3 Computing student at the National University of Singapore, 
+          Hi! I’m <span id="my-name">Jing Le</span> — a Final Year Computing student at the National University of Singapore, 
           majoring in <span id="my-course">Business Analytics with a Second Major in Economics</span>. 
         </p>
         <p style="margin-top: 0.5rem;" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000' }">
-          I enjoy working with data end-to-end — building ETL pipelines, automating workflows, and applying AI/LLM tools to wrangle messy, 
+          I enjoy working with data end-to-end — building ETL pipelines, automating workflows, leveraging data analytics and AI/LLM tools to wrangle messy, 
           raw data into dashboards and decisions people can actually act on.
         </p>
         <p style="margin-top: 0.5rem;" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000' }">
